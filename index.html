@@ -1,0 +1,679 @@
+---
+title: Home
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /*all body section*/
+    body {
+      width: 60%;
+      margin: auto;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    img {
+      border-radius: 6px 6px 0px 0px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /*social section*/
+    .fai {
+      padding: 12px 8px 12px 8px;
+      width: 50px;
+      font-size: 15px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .fai:hover {
+      opacity: 1.3;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transform: scale(1.5);
+    }
+
+    /*stars check section*/
+    .checked {
+      color: orange;
+    }
+
+    .checked:hover {
+      transform: scale(1.2);
+    }
+
+    /*cards section*/
+    .column {
+      float: left;
+      width: 33%;
+      padding: 0 10px;
+    }
+
+    .row {margin: 0 -5px;}
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 6px;
+      max-width: 300px;
+      padding: 15px;
+      display: inline-block;
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /*skills section*/
+    .containero {
+      width: 80%;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      margin: auto;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .containero:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .skills {
+    border-radius: 4px;
+      text-align: right;
+      padding: 15px;
+      color: white;
+    }
+
+    .html {width: 100%; background-color: red;}
+    .css {width: 95%; background-color: green;}
+    .javascript {width: 90%; background-color: blue;}
+    .php {width: 20%; background-color: pink;}
+    .c {width: 85%; background-color: orange;}
+    .java {width: 90%; background-color: yellow;}
+    .wordpress {width: 80%; background-color: gold;}
+    .office {width: 100%; background-color: violet;}
+    .jekyll {width: 75%; background-color: #00ffff;}
+    .sql {width: 100%; background-color: #008080;}
+    .android {width: 10%; background-color: #33ff33;}
+    .sringboot {width: 65%; background-color: #9999ff;}
+
+    /*timeline section*/
+    .timeline {
+      position: relative;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    .containere {
+      padding: 8px 44px;
+      position: relative;
+      background-color: white;
+      width: 50%;
+    }
+
+    .containere::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: red;
+      border: 4px solid black;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .left {
+      left: 0;
+    }
+
+    .right {
+      left: 50%;
+    }
+
+    .left::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      right: 30px;
+      border: medium solid white;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent white;
+    }
+
+    .right::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: 30px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+
+    .right::after {
+      left: -16px;
+    }
+
+    .content {
+      padding: 1px 20px;
+      background-color: #f1f1f1;
+      position: relative;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .content:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    @media screen and (max-width: 600px) {
+      .timeline::after {
+        left: 31px;
+      }
+
+      .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
+      .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+
+      .left::after, .right::after {
+        left: 15px;
+      }
+
+      .right {
+        left: 0%;
+      }
+    }
+
+    /*navbar section*/
+    #navbar {
+      border-radius: 0px 0px 8px 8px;
+      overflow: hidden;
+      background-color: #f1f1f1;
+      padding: 20px 30px;
+      transition: 0.3s;
+      position: fixed;
+      width: 60%;
+      top: 0;
+      z-index: 99;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    #navbar a {
+      border-radius: 0px 0px 8px 8px;
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      line-height: 25px;
+      border-radius: 4px;
+    }
+
+    #navbar #logo {
+      font-size: 30px;
+      transition: 0.3s;
+    }
+
+    #navbar:hover #logo:hover {
+      transform: scale(1.1);
+    }
+
+    #navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    #navbar a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    #navbar-right {
+      float: right;
+    }
+
+    @media screen and (max-width: 580px) {
+      #navbar {
+        padding: 20px 20px !important;
+      }
+      #navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      #navbar-right {
+        float: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div>
+  <div id="navbar">
+    <a href="#default" id="logo">Adnan Latif Gazi</a>
+    <div id="navbar-right">
+      <a class="active" href="#home">Home</a>
+    </div>
+  </div>
+
+  <p>.</p>
+  <p>.</p>
+
+  <p></p>
+  <p>PROFILE</p>
+
+  <p></p>
+  <p>TIMELINE</p>
+  <div class="timeline">
+    <div class="containere left">
+      <div class="content">
+        <h2>2017</h2>
+        <p>Lorem</p>
+      </div>
+    </div>
+    <div class="containere right">
+      <div class="content">
+        <h2>2016</h2>
+        <p>Lorem</p>
+      </div>
+    </div>
+    <div class="containere left">
+      <div class="content">
+        <h2>2015</h2>
+        <p>Lorem</p>
+      </div>
+    </div>
+    <div class="containere right">
+      <div class="content">
+        <h2>2012</h2>
+        <p>Lorem</p>
+      </div>
+    </div>
+    <div class="containere left">
+      <div class="content">
+        <h2>2011</h2>
+        <p>Lorem</p>
+      </div>
+    </div>
+    <div class="containere right">
+      <div class="content">
+        <h2>2007</h2>
+        <p>Lorem</p>
+      </div>
+    </div>
+  </div>
+
+  <p></p>
+  <p>SKILLS<p>
+  <p><strong>HTML</strong></p>
+  <div class="containero">
+    <div class="skills html">100%</div>
+  </div>
+
+  <p><strong>SQL</strong></p>
+  <div class="containero">
+    <div class="skills sql">100%</div>
+  </div>
+
+  <p><strong>OFFICE</strong></p>
+  <div class="containero">
+    <div class="skills office">100%</div>
+  </div>
+
+  <p><strong>CSS</strong></p>
+  <div class="containero">
+    <div class="skills css">95%</div>
+  </div>
+
+  <p><strong>JAVA</strong></p>
+  <div class="containero">
+    <div class="skills java">90%</div>
+  </div>
+
+  <p><strong>JAVASCRIPT</strong></p>
+  <div class="containero">
+    <div class="skills javascript">90%</div>
+  </div>
+
+  <p><strong>C++</strong></p>
+  <div class="containero">
+    <div class="skills c">85%</div>
+  </div>
+
+  <p><strong>WORDPRESS</strong></p>
+  <div class="containero">
+    <div class="skills wordpress">80%</div>
+  </div>
+
+  <p><strong>JEKYLL</strong></p>
+  <div class="containero">
+    <div class="skills jekyll">75%</div>
+  </div>
+
+  <p><strong>SRINGBOOT</strong></p>
+  <div class="containero">
+    <div class="skills sringboot">65%</div>
+  </div>
+
+  <p><strong>PHP</strong></p>
+  <div class="containero">
+    <div class="skills php">30%</div>
+  </div>
+
+  <p><strong>ANDROID</strong></p>
+  <div class="containero">
+    <div class="skills android">20%</div>
+    <p></p>
+  </div>
+
+  <p></p>
+  <p>PROJECTS</p>
+  <p></p>
+  <p></p>
+  <div class="row">
+
+    <div class="column">
+      <div class="card">
+        <img src="photos/badgeReader.jpg" style="width:100%">
+        <h1>Badge Reader</h1>
+        <p>Badge Reader è una piattaforma embedded che permette di accedere ad un sistema elettronico convalidando badge assegnati
+           a specifici utenti. Questo progetto, che ha richiesto un lavoro di gruppo, è formato una parte software e una hardware. Il software,
+           reallizato in arduino, php, html, css, javascript e android, forma un sistema cloud-based che amministra l'hardware, riconosce e gestisce
+           gli accessi utente; l'hardware effettua la lettura fisica e il riconoscimento dei badge quando avvicinati al sensore apposito.
+         </p>
+        <p>
+          Difficoltà:
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="photos/cassaforte.jpg" style="width:100%">
+        <h1>Strong Box</h1>
+        <p>Strong Box è una piattaforma embedded che simula le funzionalità di una cassaforte accessibile mediante codice di sicurezza.
+           Il progetto, realizzato in team, è composto da una parte software (programma arduino avviato in locale) e una parte hardware
+           (cassaforte il legno e sensori di inserimento codice di sicurezza). La componente software gestisce gli accessi alla cassaforte, mentre
+           l'hardware legge il codice inserito e apre lo sportello. </p>
+        <p>
+          Difficoltà:
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="photos/foglioElettronico.png" style="width:100%">
+        <h1>Spread Sheet</h1>
+        <p>Spread Sheet è una piattaforma interamente software che simula il funzionamento dei fogli elettronici in stile Microsoft Excel.
+        Il sistema è stato realizzato in java, anche mediante l'utilizzo di una libreria grafica appositamente creata per facilitare la gestione
+        front-end del software. Permette l'inserimento e la gestione dati mediante operazioni matematiche e logiche. Il motivo della sua creazione
+         è puramente dovuto alla volontà di mettere a prova le proprie abilità di realizzazione e gestione di un progetto, nonchè di progettazione
+          di un sistema complesso.</p>
+        <p>
+          Difficoltà:
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <p></p>
+  <div class="row">
+
+    <div class="column">
+      <div class="card">
+        <img src="photos/ifyt.png" style="width:100%">
+        <h1>IFYT</h1>
+        <p>IFYT (I Fix It for YouTube) è un progetto di gruppo ("I Fix It" è il nome del gruppo). IFYT è un sistema software che mette a dispozione
+          diversi servizi YouTube all'utente in un'apposita pagina web, in modo che si possa far uso di tale funzioni in modo semplice e velce.
+          Mediante un'interfaccia semplice e intuitiva, l'utente può cercare e riprodurre video, mettere like, fare log-in ...
+          La piattaforma è stata realizzata usando java, javascript, html, css, web service sprignboot e API YouTube.</p>
+        <p>
+          Difficoltà:
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="photos/reteTrasporti.png" style="width:100%">
+        <h1>Bus Monitoring</h1>
+        <p>Bus Monitoring è un simulatore di bus-tracker in tempo reale degli autobus del servizio ACTV. Ricrea una mappa virtuale della città,
+           con strade e tratte: simula quindi lo spostamento dell'insieme degli autobus. La piattaforma, creata in un primo momento e ripresa
+          e ampliata in un secondo momento, è realizzata in javascript, html, css e php: nell'ultima versione si utilizzano dati presi dalla banca ACTV
+          per una simulazione reale sempre affidabile.</p>
+        <p>
+          Difficoltà:
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="photos/scacchi.png" style="width:100%">
+        <h1>Chess for 4</h1>
+        <p></p>
+        <p>
+          Difficoltà:
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <p></p>
+  <p>GAMES</p>
+  <p></p>
+  <p></p>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="photos/solitario.png" style="width:100%">
+          <h1>Solitario</h1>
+          <p>Solitario è un gioco sviluppato interamente in linguaggi web (javascript, html, css) e messo a disposizione su una pagina web locale. Il gioco è una fedele ripproduzione dell'originale: il motivo della sua realizzazione è quindi dovuto al desiderio di mettere alla prova le proprie capacità di programmazione front-end e back-end, oltre che a quelle di progettazione.</p>
+          <p>
+            Difficoltà:
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="photos/labirinto.png" style="width:100%">
+          <h1>Labirinto</h1>
+          <p>Labirinto è un gioco realizzato interamente in java mediante l'utilizzo di una libreria creata appositamente per gestire la parte grafica. Viene creato un'applicazione desktop in cui il giocatore deve risolvere labirinti sempre più complessi e nel minor tempo possibile.</p>
+          <p>
+            Difficoltà:
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="photos/gomoku.png" style="width:100%">
+          <h1>Gomoku</h1>
+          <p>Gomoku è un gioco sviluppato interamente in java mediante l'utilizzo di una libreria creata appositamente per gestire la parte grafica. Il gioco è una fedele ripproduzione dell'originale: il motivo della sua realizzazione è quindi dovuto al desiderio di mettere alla prova le proprie capacità di programmazione front-end e back-end, oltre che a quelle di progettazione.</p>
+          <p>
+            Difficoltà:
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </p>
+        </div>
+      </div>
+
+  </div>
+
+  <p></p>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="photos/fillzone.jfif" style="width:100%">
+          <h1>Fillzone</h1>
+          <p>ciao come va la vita a ca cdsv sdvsd vsv sdv sv v sd vsd sd   </p>
+          <p>
+            Difficoltà:
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="photos/campoMinato.png" style="width:100%">
+          <h1>Bus Monitoring</h1>
+          <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+          <p>
+            Difficoltà:
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="photos/battagliaNavale.jfif" style="width:100%">
+          <h1>Chess for 4</h1>
+          <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+          <p>
+            Difficoltà:
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<p></p>
+<p>HOBBIES</p>
+
+<p></p>
+<p>ABOUT ME</p>
+
+<a href="https://www.facebook.com/profile.php?id=100006788295938" class="fai">facebook</a>
+<a href="https://www.linkedin.com/in/adnanlatifgazi" class="fai">linkedin</a>
+<a href="https://www.instagram.com/iamadnangazi/" class="fai">instagram</a>
+
+<script>
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("navbar").style.padding = "2px 2px";
+      document.getElementById("logo").style.fontSize = "30px";
+    } else {
+      document.getElementById("navbar").style.padding = "20px 30px";
+      document.getElementById("logo").style.fontSize = "30px";
+    }
+  }
+</script>
+
+</body>
+</html>
