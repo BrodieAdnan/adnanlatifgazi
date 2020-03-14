@@ -16,11 +16,15 @@ title: Home
     }
 
     img {
-      border-radius: 3px;
+      border-radius: 3px 3px 0px 0px;
     }
 
     * {
       box-sizing: border-box;
+    }
+
+    h1 {
+      margin: auto;
     }
 
     /*accordin section*/
@@ -82,7 +86,7 @@ title: Home
     /*profile card section*/
     .cardMe {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      max-width: 40%;
+      max-width: 80%;
       margin: auto;
       text-align: center;
       border-radius: 3px;
@@ -154,7 +158,7 @@ title: Home
       cursor: pointer;
       height: 10px;
       width: 10px;
-      margin: 0 5px;
+      margin: 15px 2px 0px 2px;
       background-color: #e3e3e3;
       border-radius: 50%;
       display: inline-block;
@@ -196,10 +200,6 @@ title: Home
       border-radius: 8px;
     }
 
-    .fai:hover {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-
     /*stars check section*/
     .checked {
       color: orange;
@@ -236,7 +236,6 @@ title: Home
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       border-radius: 3px;
       max-width: 300px;
-      padding: 10px;
       display: inline-block;
       background-color: #f1f1f1;
     }
@@ -287,7 +286,7 @@ title: Home
     /*timeline section*/
     .timeline {
       position: relative;
-      width: 80%;
+      width: 90%;
       margin: auto;
     }
 
@@ -406,13 +405,12 @@ title: Home
       border-radius: 0px 0px 3px 3px;
       overflow: hidden;
       background-color: #f1f1f1;
-      padding: 10px 10px 10px 35px;
-      transition: 0.2s;
+      padding: 10px 20% 10px 20%;
+      transition: 0.3s;
       position: fixed;
       width: 60%;
       top: 0;
       z-index: 99;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
 
     #navbar a {
@@ -426,7 +424,7 @@ title: Home
     }
 
     #navbar #logo {
-      font-size: 30px;
+      font-size: 35px;
     }
 
     #navbar:hover #logo:hover {
@@ -446,7 +444,7 @@ title: Home
 
     @media screen and (max-width: 580px) {
       #navbar {
-        padding: 10px 10px 10px 35px !important;
+        padding: 0 20% 0 20% !important;
       }
       #navbar a {
         float: none;
@@ -459,451 +457,405 @@ title: Home
     }
   </style>
 </head>
-
 <body>
-
   <div>
-  <div id="navbar">
-    <a href="#default" id="logo">Adnan Latif Gazi</a>
-    <div id="navbar-right">
-      <a class="active" href="#home">Home</a>
-    </div>
-  </div>
-
-  <br>
-  <br>
-  <br>
-  <div class="cardMe">
-    <div class="slideshow-container">
-
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 5</div>
-        <img src="photos/2.jpg" style="width:100%">
-        <div class="text">Iconic Gate</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 5</div>
-        <img src="photos/4.jpg" style="width:100%">
-        <div class="text">Up On The Sky</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 5</div>
-        <img src="photos/5.jpg" style="width:100%">
-        <div class="text">Harden, My Friend</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">4 / 5</div>
-        <img src="photos/1.jpg" style="width:100%">
-        <div class="text">Bonjour From Geneva</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">5 / 5</div>
-        <img src="photos/3.jpg" style="width:100%">
-        <div class="text">Roman Statues!</div>
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+    <div id="navbar">
+      <a href="#default" id="logo">Adnan Latif Gazi</a>
     </div>
 
-    <br>
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-    </div>
-    <h1>Adnan Latif Gazi</h1>
-    <p style="padding: 0px 10px 25px 10px;">ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao
-    ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao</p>
-  </div>
-
-  <br>
-  <br>
-  <p>TIMELINE</p>
-  <div class="timeline">
-    <div class="containere left">
-      <div class="content">
-        <h3>2019,  College <img src="photos/college.png" style="width:8%"></h3>
-        <p>Lorem</p>
+    <h1 style="margin: 70px 43% 0px 43%;"></h1>
+    <div class="cardMe">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+            <img src="photos/1.jpg" style="width:100%">
+            <div class="text">Iconic Gate</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+            <img src="photos/2.jpg" style="width:100%">
+            <div class="text">Up On The Sky</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+            <img src="photos/3.jpg" style="width:100%">
+            <div class="text">Roman Statues!</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+            <img src="photos/4.jpg" style="width:100%">
+            <div class="text">Bonjour From Geneva</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+            <img src="photos/5.jpg" style="width:100%">
+            <div class="text">Lucio Dalla And Me</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-    </div>
-    <div class="containere right">
-      <div class="content">
-        <h3>2016, Started Coding <img src="photos/coding.png" style="width:8%"></h3>
-        <p>Lorem</p>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
       </div>
-    </div>
-    <div class="containere left">
-      <div class="content">
-        <h3>2014, High School <img src="photos/highSchool.png" style="width:8%"></h3>
-        <p>Lorem</p>
-      </div>
-    </div>
-    <div class="containere right">
-      <div class="content">
-        <h3>2011, Middle School <img src="photos/middleSchool.png" style="width:8%"></h3>
-        <p>Lorem</p>
-      </div>
-    </div>
-    <div class="containere left">
-      <div class="content">
-        <h3>2010, Just Ballin' <img src="photos/ball.png" style="width:8%"></h3>
-        <p>Lorem</p>
-      </div>
-    </div>
-    <div class="containere right">
-      <div class="content">
-        <h3>2005, Moved in Italy <img src="photos/italy.png" style="width:8%"></h3>
-        <p>Lorem</p>
-      </div>
-    </div>
-  </div>
-
-  <br>
-  <br>
-  <button class="accordion">MySkills</button>
-  <div class="panel">
-  <br>
-  <p><strong>HTML</strong></p>
-  <div class="containero">
-    <div class="skills html">100%</div>
-  </div>
-
-  <p><strong>SQL</strong></p>
-  <div class="containero">
-    <div class="skills sql">100%</div>
-  </div>
-
-  <p><strong>OFFICE</strong></p>
-  <div class="containero">
-    <div class="skills office">100%</div>
-  </div>
-
-  <p><strong>CSS</strong></p>
-  <div class="containero">
-    <div class="skills css">95%</div>
-  </div>
-
-  <p><strong>JAVA</strong></p>
-  <div class="containero">
-    <div class="skills java">90%</div>
-  </div>
-
-  <p><strong>JAVASCRIPT</strong></p>
-  <div class="containero">
-    <div class="skills javascript">90%</div>
-  </div>
-
-  <p><strong>C++</strong></p>
-  <div class="containero">
-    <div class="skills c">85%</div>
-  </div>
-
-  <p><strong>WORDPRESS</strong></p>
-  <div class="containero">
-    <div class="skills wordpress">80%</div>
-  </div>
-
-  <p><strong>JEKYLL</strong></p>
-  <div class="containero">
-    <div class="skills jekyll">75%</div>
-  </div>
-
-  <p><strong>SRINGBOOT</strong></p>
-  <div class="containero">
-    <div class="skills sringboot">65%</div>
-  </div>
-
-  <p><strong>PHP</strong></p>
-  <div class="containero">
-    <div class="skills php">30%</div>
-  </div>
-
-  <p><strong>ANDROID</strong></p>
-  <div class="containero">
-    <div class="skills android">20%</div>
-  </div>
-  </div>
-
-  <br>
-  <br>
-  <button class="accordion">MyProjects</button>
-  <div class="panel">
-  <br>
-  <div class="row">
-
-    <div class="column">
-      <div class="card">
-        <img src="photos/badgeReader.jpg" style="width:100%">
-        <h1>Badge Reader</h1>
-        <p>Badge Reader è una piattaforma embedded che permette di accedere ad un sistema elettronico convalidando badge assegnati
-           a specifici utenti. Questo progetto, che ha richiesto un lavoro di gruppo, è formato una parte software e una hardware. Il software,
-           reallizato in arduino, php, html, css, javascript e android, forma un sistema cloud-based che amministra l'hardware, riconosce e gestisce
-           gli accessi utente; l'hardware effettua la lettura fisica e il riconoscimento dei badge quando avvicinati al sensore apposito.
-         </p>
-        <p>
-          Difficoltà:
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-        </p>
-      </div>
+      <p style="padding: 0px 10px 25px 10px;">ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao
+      ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao ciao</p>
     </div>
 
-    <div class="column">
-      <div class="card">
-        <img src="photos/cassaforte.jpg" style="width:100%">
-        <h1>Strong Box</h1>
-        <p>Strong Box è una piattaforma embedded che simula le funzionalità di una cassaforte accessibile mediante codice di sicurezza.
-           Il progetto, realizzato in team, è composto da una parte software (programma arduino avviato in locale) e una parte hardware
-           (cassaforte il legno e sensori di inserimento codice di sicurezza). La componente software gestisce gli accessi alla cassaforte, mentre
-           l'hardware legge il codice inserito e apre lo sportello. </p>
-        <p>
-          Difficoltà:
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-        </p>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="card">
-        <img src="photos/foglioElettronico.png" style="width:100%">
-        <h1>Spread Sheet</h1>
-        <p>Spread Sheet è una piattaforma interamente software che simula il funzionamento dei fogli elettronici in stile Microsoft Excel.
-        Il sistema è stato realizzato in java, anche mediante l'utilizzo di una libreria grafica appositamente creata per facilitare la gestione
-        front-end del software. Permette l'inserimento e la gestione dati mediante operazioni matematiche e logiche. Il motivo della sua creazione
-         è puramente dovuto alla volontà di mettere a prova le proprie abilità di realizzazione e gestione di un progetto, nonchè di progettazione
-          di un sistema complesso.</p>
-        <p>
-          Difficoltà:
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-        </p>
-      </div>
-    </div>
-
-  </div>
-
-  <br>
-  <br>
-  <div class="row">
-
-    <div class="column">
-      <div class="card">
-        <img src="photos/ifyt.png" style="width:100%">
-        <h1>IFYT</h1>
-        <p>IFYT (I Fix It for YouTube) è un progetto di gruppo ("I Fix It" è il nome del gruppo). IFYT è un sistema software che mette a dispozione
-          diversi servizi YouTube all'utente in un'apposita pagina web, in modo che si possa far uso di tale funzioni in modo semplice e velce.
-          Mediante un'interfaccia semplice e intuitiva, l'utente può cercare e riprodurre video, mettere like, fare log-in ...
-          La piattaforma è stata realizzata usando java, javascript, html, css, web service sprignboot e API YouTube.</p>
-        <p>
-          Difficoltà:
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-        </p>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="card">
-        <img src="photos/reteTrasporti.png" style="width:100%">
-        <h1>Bus Monitoring</h1>
-        <p>Bus Monitoring è un simulatore di bus-tracker in tempo reale degli autobus del servizio ACTV. Ricrea una mappa virtuale della città,
-           con strade e tratte: simula quindi lo spostamento dell'insieme degli autobus. La piattaforma, creata in un primo momento e ripresa
-          e ampliata in un secondo momento, è realizzata in javascript, html, css e php: nell'ultima versione si utilizzano dati presi dalla banca ACTV
-          per una simulazione reale sempre affidabile.</p>
-        <p>
-          Difficoltà:
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-        </p>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="card">
-        <img src="photos/scacchi.png" style="width:100%">
-        <h1>Chess for 4</h1>
-        <p></p>
-        <p>
-          Difficoltà:
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-        </p>
-      </div>
-    </div>
-
-  </div>
-
-  <br>
-  <br>
-  <p>GAMES</p>
-  <br>
-  <br>
-    <div class="row">
-      <div class="column">
-        <div class="card">
-          <img src="photos/solitario.png" style="width:100%">
-          <h1>Solitario</h1>
-          <p>Solitario è un gioco sviluppato interamente in linguaggi web (javascript, html, css) e messo a disposizione su una pagina web locale. Il gioco è una fedele ripproduzione dell'originale: il motivo della sua realizzazione è quindi dovuto al desiderio di mettere alla prova le proprie capacità di programmazione front-end e back-end, oltre che a quelle di progettazione.</p>
-          <p>
-            Difficoltà:
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-          </p>
+    <h1 style="margin: 30px 40% 0 40%;">MyTimeline</h1>
+    <div style="margin: 20px 0px 30px 0px;">
+    <div class="timeline">
+      <div class="containere left">
+        <div class="content">
+          <h3>2019,  College <img src="photos/college.png" style="width:8%"></h3>
+          <p>Attualmente studente di Informatica all'Università degli Studi di Padova ;)</p>
         </div>
       </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="photos/labirinto.png" style="width:100%">
-          <h1>Labirinto</h1>
-          <p>Labirinto è un gioco realizzato interamente in java mediante l'utilizzo di una libreria creata appositamente per gestire la parte grafica. Viene creato un'applicazione desktop in cui il giocatore deve risolvere labirinti sempre più complessi e nel minor tempo possibile.</p>
-          <p>
-            Difficoltà:
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </p>
+      <div class="containere right">
+        <div class="content">
+          <h3>2016, Started Coding <img src="photos/coding.png" style="width:8%"></h3>
+          <p>Cominciato a programmare in Java, C++, e linguaggi web a scuola. Continuato poi da solo per passione.</p>
         </div>
       </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="photos/gomoku.png" style="width:100%">
-          <h1>Gomoku</h1>
-          <p>Gomoku è un gioco sviluppato interamente in java mediante l'utilizzo di una libreria creata appositamente per gestire la parte grafica. Il gioco è una fedele ripproduzione dell'originale: il motivo della sua realizzazione è quindi dovuto al desiderio di mettere alla prova le proprie capacità di programmazione front-end e back-end, oltre che a quelle di progettazione.</p>
-          <p>
-            Difficoltà:
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </p>
+      <div class="containere left">
+        <div class="content">
+          <h3>2014, High School <img src="photos/highSchool.png" style="width:8%"></h3>
+          <p>Iniziato a frequentare le scuole superiori: ITIS C.Zuccante di Mestre, Venezia. Articolazione Informatica.</p>
         </div>
       </div>
-
-  </div>
-
-  <br>
-  <br>
-    <div class="row">
-      <div class="column">
-        <div class="card">
-          <img src="photos/fillzone.jfif" style="width:100%">
-          <h1>Fillzone</h1>
-          <p>ciao come va la vita a ca cdsv sdvsd vsv sdv sv v sd vsd sd   </p>
-          <p>
-            Difficoltà:
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </p>
+      <div class="containere right">
+        <div class="content">
+          <h3>2011, Middle School <img src="photos/middleSchool.png" style="width:8%"></h3>
+          <p>Iniziato a frequentare le scuole medie.</p>
         </div>
       </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="photos/campoMinato.png" style="width:100%">
-          <h1>Bus Monitoring</h1>
-          <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-          <p>
-            Difficoltà:
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </p>
+      <div class="containere left">
+        <div class="content">
+          <h3>2010, Just Ballin' <img src="photos/ball.png" style="width:8%"></h3>
+          <p>Mi sono appassionato al basket e ho cominciato a praticarlo agonisticamente.</p>
         </div>
       </div>
+      <div class="containere right">
+        <div class="content">
+          <h3>2005, Moved in Italy <img src="photos/italy.png" style="width:8%"></h3>
+          <p>Trasferito in Italia.</p>
+        </div>
+      </div>
+      </div>
+    </div>
 
-      <div class="column">
-        <div class="card">
-          <img src="photos/battagliaNavale.jfif" style="width:100%">
-          <h1>Chess for 4</h1>
-          <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-          <p>
-            Difficoltà:
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </p>
+    <button class="accordion">MySkills</button>
+    <div class="panel" style="padding: 0px 0px 10px 0px;">
+      <p><strong>HTML</strong></p>
+      <div class="containero">
+        <div class="skills html">100%</div>
+      </div>
+      <p><strong>SQL</strong></p>
+      <div class="containero">
+        <div class="skills sql">100%</div>
+      </div>
+      <p><strong>OFFICE</strong></p>
+      <div class="containero">
+        <div class="skills office">100%</div>
+      </div>
+      <p><strong>CSS</strong></p>
+      <div class="containero">
+        <div class="skills css">95%</div>
+      </div>
+      <p><strong>JAVA</strong></p>
+      <div class="containero">
+        <div class="skills java">90%</div>
+      </div>
+      <p><strong>JAVASCRIPT</strong></p>
+      <div class="containero">
+        <div class="skills javascript">90%</div>
+      </div>
+      <p><strong>C++</strong></p>
+      <div class="containero">
+        <div class="skills c">85%</div>
+      </div>
+      <p><strong>WORDPRESS</strong></p>
+      <div class="containero">
+        <div class="skills wordpress">80%</div>
+      </div>
+      <p><strong>JEKYLL</strong></p>
+      <div class="containero">
+        <div class="skills jekyll">75%</div>
+      </div>
+      <p><strong>SRINGBOOT</strong></p>
+      <div class="containero">
+        <div class="skills sringboot">65%</div>
+      </div>
+      <p><strong>PHP</strong></p>
+      <div class="containero">
+        <div class="skills php">30%</div>
+      </div>
+      <p><strong>ANDROID</strong></p>
+      <div class="containero">
+        <div class="skills android">20%</div>
+      </div>
+      <br>
+    </div>
+
+    <button class="accordion">MyProjects</button>
+    <div class="panel" style="margin: 0px 0px 10px 0px;">
+      <div class="row" style="padding: 40px 0px 0px 0px;">
+        <div class="column">
+            <div class="card">
+              <img src="photos/badgeReader.jpg" style="width:100%">
+              <h1 style="padding: 15px 0px 0px 0px;"><a href="https://github.com/BrodieAdnan/MyProjects/tree/master/BadgeReader" style="font-size:30px; color:black;" class="fai">Badge Reader</a></h1>
+              <p style="padding: 0px 10px 0px 10px;">Badge Reader è una piattaforma embedded che permette di accedere ad un sistema elettronico convalidando badge assegnati
+                 a specifici utenti. Questo progetto, che ha richiesto un lavoro di gruppo, è formato una parte software e una hardware. Il software,
+                 reallizato in arduino, php, html, css, javascript e android, forma un sistema cloud-based che amministra l'hardware, riconosce e gestisce
+                 gli accessi utente; l'hardware effettua la lettura fisica e il riconoscimento dei badge quando avvicinati al sensore apposito.
+               </p>
+              <p style="padding: 0px 10px 0px 10px;">
+                Difficoltà:
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </p>
+            </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="photos/scacchi.png" style="width:100%">
+            <h1 style="padding: 15px 0px 0px 0px;"><a href="https://github.com/BrodieAdnan/MyProjects/tree/master/ScacchiX4" style="font-size:30px; color:black;" class="fai">Chess for 4</a></h1>
+            <p style="padding: 0px 10px 0px 10px;">Chess for 4 ha l'intento di simulare le modalità di funzionamento di un'azienda software: il sistema è stato infatti
+            realizzato come progetto finale per un corso di ingegneria del software, a seguito di processi di gestione e progettazione ispirate ad aziende informatiche.
+             La piattaforma, interamente software, consiste in un'applicazione desktop che permette di giocare a scacchi in modalità multigiocatore fino ad un massimo di 4 giocatori
+             connessi ad una stessa rete LAN e aventi il sistema installato in locale. Il gioco è stato realizzato in Java, usando il framework JavaFX. Il gioco viene ampliato
+           mettendo a disposizione la possibilità di sfidare bot e sfruttare una visuale 3D del campo.</p>
+            <p style="padding: 0px 10px 0px 10px;">
+              Difficoltà:
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </p>
+          </div>
+        </div>
+        <div class="column">
+            <div class="card">
+              <img src="photos/foglioElettronico.png" style="width:100%">
+              <h1 style="padding: 15px 0px 0px 0px;"><a href="https://github.com/BrodieAdnan/MyProjects/tree/master/FoglioElettronico" style="font-size:30px; color:black;" class="fai">Spread Sheet</a></h1>
+              <p style="padding: 0px 10px 0px 10px;">Spread Sheet è una piattaforma interamente software che simula il funzionamento dei fogli elettronici in stile Microsoft Excel.
+              Il sistema è stato realizzato in java, anche mediante l'utilizzo di una libreria grafica appositamente creata per facilitare la gestione
+              front-end del software. Permette l'inserimento e la gestione dati mediante operazioni matematiche e logiche. Il motivo della sua creazione
+               è puramente dovuto alla volontà di mettere a prova le proprie abilità di realizzazione e gestione di un progetto, nonchè di progettazione
+                di un sistema complesso.</p>
+              <p style="padding: 0px 10px 0px 10px;">
+                Difficoltà:
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+            </div>
+        </div>
+      </div>
+      <div class="row" style="margin: 40px 0 50px 0">
+        <div class="column">
+          <div class="card">
+            <img src="photos/ifyt.png" style="width:100%">
+            <h1 style="padding: 15px 0px 0px 0px;"><a href="https://github.com/BrodieAdnan/MyProjects/tree/master/ifiyt" style="font-size:30px; color:black;" class="fai">IFYT</a></h1>
+            <p style="padding: 0px 10px 0px 10px;">IFYT (I Fix It for YouTube) è un progetto di gruppo ("I Fix It" è il nome del gruppo). IFYT è un sistema software che mette a dispozione
+              diversi servizi di YouTube all'utente in un'apposita pagina web, in modo che si possa far uso di tale funzioni in modo semplice e veloce.
+              Mediante un'interfaccia semplice e intuitiva, l'utente può cercare e riprodurre video, mettere like, fare log-in col proprio account usando solo comandi vocali.
+              La piattaforma è stata realizzata usando java, javascript, html, css, web service sprignboot e API YouTube.</p>
+            <p style="padding: 0px 10px 0px 10px;">
+              Difficoltà:
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="photos/reteTrasporti.png" style="width:100%">
+            <h1 style="padding: 15px 0px 0px 0px;"><a href="https://github.com/BrodieAdnan/MyProjects/tree/master/ReteTrasporti" style="font-size:30px; color:black;" class="fai">Bus Monitoring</a></h1>
+            <p style="padding: 0px 10px 0px 10px;">Bus Monitoring è un simulatore di bus-tracker in tempo reale degli autobus del servizio ACTV. Ricrea una mappa virtuale della città,
+               con strade, fermate e tratte: simula quindi lo spostamento dell'insieme degli autobus lungo le strade in base ai percorsi e agli orari di ciascuna linea.
+                La piattaforma, creata in un primo momento, poi ripresa e ampliata in un secondo momento, è realizzata in javascript, html, css e php:
+                nell'ultima versione si utilizzano dati presi direttamente dalla banca dati ACTV (ricreando accuratamente le strade, le tratte e le fermate della città) per una simulazione reale sempre affidabile.</p>
+            <p style="padding: 0px 10px 0px 10px;">
+              Difficoltà:
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </p>
+          </div>
+        </div>
+        <div class="column">
+            <div class="card">
+              <img src="photos/cassaforte.jpg" style="width:100%">
+              <h1 style="padding: 15px 0px 0px 0px;"><a href="https://github.com/BrodieAdnan/MyProjects/tree/master/Cassaforte" style="font-size:30px; color:black;" class="fai">Strong Box</a></h1>
+              <p style="padding: 0px 10px 0px 10px;">Strong Box è una piattaforma embedded che simula le funzionalità di una cassaforte accessibile mediante codice di sicurezza.
+                 Il progetto, realizzato in team e dopo lunga fase di progettazione e documentazione, è composto da una parte software (programma arduino avviato in locale)
+                 e una parte hardware (cassaforte il legno e sensori di inserimento codice di sicurezza). La componente software gestisce gli accessi alla cassaforte, mentre
+                 l'hardware legge il codice inserito e apre automaticamente lo sportello mediante leva meccanica. </p>
+              <p style="padding: 0px 10px 0px 10px;">
+                Difficoltà:
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+            </div>
         </div>
       </div>
     </div>
 
-  </div>
+    <button class="accordion">MyGames</button>
+    <div class="panel" style="margin: 0px 0px 10px 0px;">
+      <div class="row" style="margin: 40px 0 0 0">
+          <div class="column">
+            <div class="card">
+              <img src="photos/solitario.png" style="width:100%">
+              <h1 style="padding: 15px 0px 0px 0px;"><a href="https://github.com/BrodieAdnan/Games/tree/master/Solitario" style="font-size:30px; color:black;" class="fai">Solitario</a></h1>
+              <p style="padding: 0px 10px 0px 10px;">Solitario è un gioco sviluppato interamente usando linguaggi web (javascript, html, css) e messo a disposizione su una pagina internet in locale. Il gioco è una fedele ripproduzione dell'originale: il motivo della sua realizzazione è quindi dovuto al desiderio di mettere alla prova le proprie capacità di programmazione front-end e back-end, oltre che a quelle di progettazione. Per facilitare la gestione grafica è stato utilizzato una libreria Javascript appositamente creata.</p>
+              <p style="padding: 0px 10px 0px 10px;">
+                Difficoltà:
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img src="photos/labirinto.png" style="width:100%">
+              <h1 style="padding: 15px 0px 0px 0px;"><a href="https://github.com/BrodieAdnan/Games/tree/master/Labirinto2" style="font-size:30px; color:black;" class="fai">Labirinto</a></h1>
+              <p style="padding: 0px 10px 0px 10px;">Labirinto è un gioco realizzato interamente in java mediante l'utilizzo di una libreria creata appositamente per gestire la parte grafica in modo semplice e veloce. Viene creato un'applicazione desktop in cui il giocatore deve risolvere labirinti sempre più complessi e nel minor tempo possibile. La realizzazione della piattaforma comprende anche una parte di progettazione.</p>
+              <p style="padding: 0px 10px 0px 10px;">
+                Difficoltà:
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img src="photos/gomoku.png" style="width:100%">
+              <h1 style="padding: 15px 0px 0px 0px;"><a href="https://github.com/BrodieAdnan/Games/tree/master/DiversiGomoku" style="font-size:30px; color:black;" class="fai">Gomoku</a></h1>
+              <p style="padding: 0px 10px 0px 10px;">Gomoku è un gioco sviluppato interamente in java mediante l'utilizzo di una libreria creata appositamente per gestire la parte grafica. Il gioco è una fedele ripproduzione dell'originale: il motivo della sua realizzazione è quindi dovuto al desiderio di mettere alla prova le proprie capacità di programmazione front-end e back-end, oltre che a quelle di progettazione.</p>
+              <p style="padding: 0px 10px 0px 10px;">
+                Difficoltà:
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+            </div>
+          </div>
+      </div>
+      <div class="row" style="margin: 40px 0 50px 0">
+          <div class="column">
+            <div class="card">
+              <img src="photos/fillzone.png" style="width:100%">
+              <h1 style="padding: 15px 0px 0px 0px;"><a href="https://github.com/BrodieAdnan/Games/tree/master/FILLZONE" style="font-size:30px; color:black;" class="fai">Fillzone</a></h1>
+              <p style="padding: 0px 10px 0px 10px;">Fillzone è un gioco realizzato come progetto scolastico. Scritto in Java mediante l'utilizzo di un'apposita libreria grafica che facilita e semplifica la gestione back-end, Fillzone è una fedele riproduzione del gioco originale: mette alla prova quindi le proprie capacità di gestione e progettazione di una sistema complesso. Viene utilizzato il paradigma della programmazione ricorsiva. Mette a disposizione un'applicazione desktop per gioco offline a giocatore singolo.</p>
+              <p style="padding: 0px 10px 0px 10px;">
+                Difficoltà:
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img src="photos/campoMinato.png" style="width:100%">
+              <h1 style="padding: 15px 0px 0px 0px;"><a href="https://github.com/BrodieAdnan/Games/tree/master/CampoMinato" style="font-size:30px; color:black;" class="fai">Campo Minato</a></h1>
+              <p style="padding: 0px 10px 0px 10px;">Campo Minato è un gioco realizzato come progetto scolastico. Scritto in Java mediante l'utilizzo di un'apposita libreria grafica che facilita e semplifica la gestione back-end, Campo Minato è una fedele riproduzione del gioco originale: mette alla prova quindi le proprie capacità di gestione e progettazione di una sistema complesso.</p>
+              <p style="padding: 0px 10px 0px 10px;">
+                Difficoltà:
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img src="photos/battagliaNavale.jpg" style="width:100%">
+              <h1 style="padding: 15px 0px 0px 0px;"><a href="https://github.com/BrodieAdnan/Games/tree/master/BattagliaNavale" style="font-size:30px; color:black;" class="fai">Battaglia Navale</a></h1>
+              <p style="padding: 0px 10px 0px 10px;">Battaglia Navale è un compito scolastico: è stato realizzato in Java mediante l'uso di una libreria grafica
+              creata apposta per facilitare la gestione front-end. Il gioco, messo a disposione sottoforma di applicazione desktop in locale, permette di giocare a battaglia navale
+              contro un bot.</p>
+              <p style="padding: 0px 10px 0px 10px;">
+                Difficoltà:
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
 
-  <br>
-  <br>
-  <button class="accordion">MyHobbies</button>
-  <div class="panel">
-    <br>
-    <table>
-      <tr>
-        <td>Basketball</td>
-        <td><img src="photos/ball.png" style="width:5%"></td>
-      </tr>
-      <tr>
-        <td>Coding</td>
-        <td><img src="photos/coding.png" style="width:5%"></td>
-      </tr>
-      <tr>
-        <td>Reading</td>
-        <td><img src="photos/read.png" style="width:5%"></td>
-      </tr>
-      <tr>
-        <td>Running</td>
-        <td><img src="photos/run.jpg" style="width:5%"></td>
-      </tr>
+    <button class="accordion">MyHobbies</button>
+    <div class="panel" style="padding: 0px 0 10px 0">
+      <table style="margin: 10px 0 0 0">
+        <tr>
+          <td>Basketball</td>
+          <td><img src="photos/ball.png" style="width:5%"></td>
+          <td>Flying</td>
+          <td><img src="photos/fly.png" style="width:10%"></td>
+        </tr>
+        <tr>
+          <td>Coding</td>
+          <td><img src="photos/coding.png" style="width:5%"></td>
+          <td>Sleeping</td>
+          <td><img src="photos/sleep.png" style="width:10%"></td>
+        </tr>
+        <tr>
+          <td>Reading</td>
+          <td><img src="photos/read.png" style="width:5%"></td>
+          <td>Travelling</td>
+          <td><img src="photos/travel.png" style="width:10%"></td>
+        </tr>
+        <tr>
+          <td>Running</td>
+          <td><img src="photos/run.jpg" style="width:5%"></td>
+          <td>Drinking Water</td>
+          <td><img src="photos/water.png" style="width:10%"></td>
+        </tr>
+      </table>
+    </div>
 
-    </table>
-  </div>
-
-  <br>
-  <br>
-  <a href="mailto:adnangazi.ag@gmail.com" class="fai">email</a>
-  <a href="https://www.linkedin.com/in/adnanlatifgazi" class="fai">linkedin</a>
-  <a href="https://www.github.com/brodieadnan/" class="fai">github</a>
-  <a href="https://www.facebook.com/profile.php?id=100006788295938" class="fai">facebook</a>
-  <a href="https://www.instagram.com/iamadnangazi/" class="fai">instagram</a>
+    <a href="mailto:adnangazi.ag@gmail.com" class="fai">email</a>
+    <a href="https://www.linkedin.com/in/adnanlatifgazi" class="fai">linkedin</a>
+    <a href="https://www.github.com/brodieadnan/" class="fai">github</a>
+    <a href="https://www.facebook.com/profile.php?id=100006788295938" class="fai">facebook</a>
+    <a href="https://www.instagram.com/iamadnangazi/" class="fai">instagram</a>
+    <a href="photos/cv.pdf" class="fai">CV</a>
   </div>
 
   <script>
@@ -911,11 +863,11 @@ title: Home
 
     function scrollFunction() {
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navbar").style.padding = "1px 1px 1px 10px";
-        document.getElementById("logo").style.fontSize = "30px";
+        document.getElementById("navbar").style.padding = "1px 1px 1px 8px";
+        document.getElementById("logo").style.fontSize = "20px";
       } else {
-        document.getElementById("navbar").style.padding = "10px 10px 10px 35px";
-        document.getElementById("logo").style.fontSize = "30px";
+        document.getElementById("navbar").style.padding = "10px 20% 10px 20%";
+        document.getElementById("logo").style.fontSize = "35px";
       }
     }
   </script>
