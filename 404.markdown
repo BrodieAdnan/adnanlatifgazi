@@ -22,5 +22,5 @@ layout: default
 
   <p><strong>Page not found ;)</strong></p>
   <p>The requested page could not exist</p>
-  <p>Control the name of the page is right, or return to the home page of the site.</a></p>
+  <p>Control the name of the page is right, or <a href="https://brodieadnan.github.io/adnanlatifgazi">return to the home page of the site.</a></p>
 </div>
